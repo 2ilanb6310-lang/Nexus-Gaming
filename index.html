@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090713">
+  <meta name="description" content="Nexus Gaming — entre dans l'arène.">
+  <title>NEXUS GAMING — Dark Neon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Nexus Gaming accueil">
+      <span class="brand-mark">N</span><span>NEXUS<span class="brand-light"> GAMING</span></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Accueil</a>
+      <a href="#univers">Univers</a>
+      <a href="#stream">Live Twitch</a>
+    </nav>
+    <a class="top-cta" href="#stream">Rejoindre le live <span>↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> PLAYER ONE // ONLINE</p>
+        <h1>ENTER THE<br><span>NEXUS</span></h1>
+        <p class="hero-text">Un univers. Une communauté. Une seule règle : jouer avec style.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#stream">Découvrir le stream <span>↗</span></a>
+          <a class="button button-ghost" href="#univers">Explorer</a>
+        </div>
+        <div class="hero-meta"><span class="meta-line"></span><span>GAMING • STREAM • COMMUNITY</span></div>
+      </div>
+      <div class="samurai-panel" aria-label="Présentation du samouraï 3D">
+        <div class="ring ring-one"></div><div class="ring ring-two"></div>
+        <div class="corner corner-tl"></div><div class="corner corner-br"></div>
+        <div class="model-label"><span>01 / THE WARRIOR</span><span class="model-status">3D MODEL</span></div>
+        <div id="samurai-stage">
+          <div class="model-loading" id="model-loading"><span class="loader"></span><span>INITIALISATION DU MODÈLE</span></div>
+          <div class="model-error" id="model-error" hidden>Le modèle 3D sera affiché ici dès que le fichier samouraï sera ajouté dans <code>assets/</code>.</div>
+        </div>
+        <div class="model-bottom"><span>ROTATION INTERACTIVE</span><span class="crosshair">＋</span><span>DRAG TO ROTATE</span></div>
+      </div>
+      <div class="vertical-word">NEXUS GAMING — EST. 2026</div>
+    </section>
+
+    <section class="stats-strip" id="univers">
+      <div><span class="stat-index">01</span><span class="stat-title">DARK NEON</span><span class="stat-sub">Une identité forte</span></div>
+      <div><span class="stat-index">02</span><span class="stat-title">LIVE CONTENT</span><span class="stat-sub">Retrouve les streams</span></div>
+      <div><span class="stat-index">03</span><span class="stat-title">COMMUNITY</span><span class="stat-sub">La team avant tout</span></div>
+    </section>
+
+    <section class="stream-section" id="stream">
+      <div>
+        <p class="eyebrow">// TRANSMISSION EN DIRECT</p>
+        <h2>ON SE RETROUVE<br><span>EN LIVE.</span></h2>
+        <p class="stream-copy">La prochaine session commence ici. Le lien Twitch sera ajouté dès que le pseudo de la chaîne sera renseigné.</p>
+      </div>
+      <a class="button button-primary twitch-button" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">Ouvrir Twitch <span>↗</span></a>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">N</span><span>NEXUS<span class="brand-light"> GAMING</span></span></a><span>© 2026 NEXUS GAMING</span><span>BUILT FOR THE NEXT LEVEL</span></footer>
+</body>
+</html>
