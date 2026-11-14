@@ -52,7 +52,7 @@ if (stage) {
 
   let model;
   const loader = new GLTFLoader();
-  loader.load("./assets/samourai-cyberpunk.glb", (gltf) => {
+  loader.load("./samourai_cyberpunk_3d.glb", (gltf) => {
     model = gltf.scene;
     const bounds = new THREE.Box3().setFromObject(model);
     const size = bounds.getSize(new THREE.Vector3());
